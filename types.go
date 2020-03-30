@@ -244,6 +244,30 @@ type NullAnsweredBy struct {
 	AnsweredBy AnsweredBy
 }
 
+func (ab *NullAnsweredBy) UnmarshalJSON(b []byte) error {
+	s := new(string)
+	if err := json.Unmarshal(b, s); err != nil {
+		return err
+	}
+	if s == nil || *s == "null" || *s == "" {
+		t.Valid = false
+		return nil
+	}
+	*ab = NullAnsweredBy{AnsweredBy: *s, Valid: true}
+	return nil
+}
+
+func (ab *NullAnsweredBy) MarshalJSON() ([]byte, error) {
+	if ab.Valid == false {
+		return []byte("null"), nil
+	}
+	b, err := json.Marshal(ab.AnsweredBy)
+	if err != nil {
+		return []byte{}, err
+	}
+	return b, nil
+}
+
 // The status of a resource ("accepted", "queued", etc).
 // For more information, see
 //
