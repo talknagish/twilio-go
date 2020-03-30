@@ -250,10 +250,10 @@ func (ab *NullAnsweredBy) UnmarshalJSON(b []byte) error {
 		return err
 	}
 	if s == nil || *s == "null" || *s == "" {
-		t.Valid = false
+		ab.Valid = false
 		return nil
 	}
-	*ab = NullAnsweredBy{AnsweredBy: *s, Valid: true}
+	*ab = NullAnsweredBy{AnsweredBy: AnsweredBy(*s), Valid: true}
 	return nil
 }
 
