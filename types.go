@@ -235,7 +235,9 @@ func (td TwilioDuration) String() string {
 type AnsweredBy string
 
 const AnsweredByHuman = AnsweredBy("human")
-const AnsweredByMachine = AnsweredBy("machine")
+const AnsweredByMachine = AnsweredBy("machine_start")
+const AnsweredByFax = AnsweredBy("fax")
+const AnsweredByUnknown = AnsweredBy("unknown")
 
 type NullAnsweredBy struct {
 	Valid      bool
