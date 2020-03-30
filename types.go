@@ -261,6 +261,7 @@ func (ab *NullAnsweredBy) MarshalJSON() ([]byte, error) {
 	if ab.Valid == false {
 		return []byte("null"), nil
 	}
+	
 	b, err := json.Marshal(ab.AnsweredBy)
 	if err != nil {
 		return []byte{}, err
