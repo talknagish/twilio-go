@@ -1,5 +1,17 @@
 # Changes
 
+## 2.6
+
+Add "incoming" option for VoiceGrant.
+
+Tags in VoiceCallSummary are a []string, not a map[string]string (the docs have
+them as "null", so this wasn't clear).
+
+## 2.5
+
+Use a new version of github.com/kevinburke/rest that reduces the number of
+imports necessary to run the library.
+
 ## 2.4
 
 Add Voice Insights API (thank you @yeoji)

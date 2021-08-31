@@ -325,6 +325,10 @@ const StatusRinging = Status("ringing")
 
 const StatusProcessing = Status("processing")
 
+// WhatsApp statuses
+
+const StatusRead = Status("read")
+
 // Shared statuses
 
 const StatusActive = Status("active")
