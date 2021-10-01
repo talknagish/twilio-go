@@ -13,18 +13,18 @@ A client for accessing the Twilio API with several nice features:
   environment.
 
 - Easily find calls and messages that occurred between a particular
-set of `time.Time`s, down to the nanosecond, with GetCallsInRange /
-GetMessagesInRange.
+  set of `time.Time`s, down to the nanosecond, with GetCallsInRange /
+  GetMessagesInRange.
 
 - It's clear when the library will make a network request, there are no
-unexpected latency spikes when paging from one resource to the next.
+  unexpected latency spikes when paging from one resource to the next.
 
 - Uses threads to fetch resources concurrently; for example, has methods to
-fetch all Media for a Message concurrently.
+  fetch all Media for a Message concurrently.
 
 - Usable, [one sentence descriptions of Alerts][alert-descriptions].
 
-[alert-descriptions]: https://godoc.org/github.com/kevinburke/twilio-go#Alert.Description
+[alert-descriptions]: https://godoc.org/github.com/alon7/twilio-go#Alert.Description
 
 Here are some example use cases:
 
@@ -61,7 +61,7 @@ for {
 ```
 
 A [complete documentation reference can be found at
-godoc.org](https://godoc.org/github.com/kevinburke/twilio-go).
+godoc.org](https://godoc.org/github.com/alon7/twilio-go).
 
 ## In Production
 
@@ -140,12 +140,12 @@ response.
   internally before returning it to you.
 
 - The only provided API for filtering calls or messages by date grabs all
-messages for an entire day, and the day ranges are only available for UTC. Use
-GetCallsInRange or GetMessagesInRange to do timezone-aware, finer-grained date
-filtering.
+  messages for an entire day, and the day ranges are only available for UTC. Use
+  GetCallsInRange or GetMessagesInRange to do timezone-aware, finer-grained date
+  filtering.
 
 - You can get Alerts for a given Call or MMS by passing `ResourceSid=CA123` as
-a filter to Alerts.GetPage. This functionality is not documented in the API.
+  a filter to Alerts.GetPage. This functionality is not documented in the API.
 
 ## Consulting
 
