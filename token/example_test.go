@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/alon7/twilio-go/token"
+	"github.com/talknagish/twilio-go/token"
 )
 
 func Example() {

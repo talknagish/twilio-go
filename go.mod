@@ -1,4 +1,4 @@
-module github.com/alon7/twilio-go
+module github.com/talknagish/twilio-go
 
 go 1.17
 

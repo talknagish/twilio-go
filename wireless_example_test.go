@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	twilio "github.com/alon7/twilio-go"
+	twilio "github.com/talknagish/twilio-go"
 )
 
 func Example_wireless() {

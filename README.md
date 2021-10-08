@@ -24,7 +24,7 @@ A client for accessing the Twilio API with several nice features:
 
 - Usable, [one sentence descriptions of Alerts][alert-descriptions].
 
-[alert-descriptions]: https://godoc.org/github.com/alon7/twilio-go#Alert.Description
+[alert-descriptions]: https://godoc.org/github.com/talknagish/twilio-go#Alert.Description
 
 Here are some example use cases:
 
@@ -61,7 +61,7 @@ for {
 ```
 
 A [complete documentation reference can be found at
-godoc.org](https://godoc.org/github.com/alon7/twilio-go).
+godoc.org](https://godoc.org/github.com/talknagish/twilio-go).
 
 ## In Production
 

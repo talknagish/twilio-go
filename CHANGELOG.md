@@ -140,7 +140,7 @@ contributing the patch.
 Support the Twilio Fax API.
 
 - Rename imports from github.com/saintpete/twilio-go to
-  github.com/alon7/twilio-go.
+  github.com/talknagish/twilio-go.
 
 ## 0.58
 
