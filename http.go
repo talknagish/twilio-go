@@ -98,6 +98,7 @@ type Client struct {
 
 	// The API Client uses these resources
 	Accounts          *AccountService
+	Addresses         *AddressService
 	Applications      *ApplicationService
 	Calls             *CallService
 	Conferences       *ConferenceService
