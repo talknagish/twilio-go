@@ -381,6 +381,7 @@ func NewClient(accountSid string, authToken string, httpClient *http.Client) *Cl
 	c.Insights = NewInsightsClient(accountSid, authToken, httpClient)
 
 	c.Accounts = &AccountService{client: c}
+	c.Addresses = &AddressService{client: c}
 	c.Applications = &ApplicationService{client: c}
 	c.Calls = &CallService{client: c}
 	c.Conferences = &ConferenceService{client: c}
